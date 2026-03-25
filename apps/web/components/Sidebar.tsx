@@ -1,14 +1,14 @@
 const nav = [
   {
-    group: "Foundation",
-    items: ["Colors", "Typography", "Spacing", "Shadows", "Border Radius"],
+    group: "기초",
+    items: ["색상", "타이포그래피", "간격", "그림자", "둥근 모서리"],
   },
   {
-    group: "Components",
+    group: "컴포넌트",
     items: ["Button", "Input", "Badge", "Card", "Select", "Checkbox", "Toggle"],
   },
   {
-    group: "Patterns",
+    group: "패턴",
     items: ["Form", "Navigation", "Modal", "Toast"],
   },
 ];

@@ -4,14 +4,14 @@ export default function ComponentPreview() {
       <div>
         <h1 className="text-2xl font-semibold tracking-tight mb-1">Button</h1>
         <p className="text-sm text-zinc-500">
-          Triggers an action or event when clicked.
+          클릭하면 동작이나 이벤트를 실행해요.
         </p>
       </div>
 
       {/* Preview */}
       <section className="flex flex-col gap-3">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          Preview
+          미리보기
         </h2>
         <div className="rounded-xl border border-zinc-200 bg-zinc-50 flex items-center justify-center min-h-40 gap-3">
           <button className="px-4 py-2 text-sm font-medium rounded-md bg-zinc-900 text-white hover:bg-zinc-700 transition-colors">
@@ -29,14 +29,14 @@ export default function ComponentPreview() {
       {/* Variants */}
       <section className="flex flex-col gap-3">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          Variants
+          변형
         </h2>
         <div className="rounded-xl border border-zinc-200 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 border-b border-zinc-200">
               <tr>
-                <th className="text-left px-4 py-2.5 text-xs font-semibold text-zinc-500">Variant</th>
-                <th className="text-left px-4 py-2.5 text-xs font-semibold text-zinc-500">Preview</th>
+                <th className="text-left px-4 py-2.5 text-xs font-semibold text-zinc-500">변형</th>
+                <th className="text-left px-4 py-2.5 text-xs font-semibold text-zinc-500">미리보기</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-100">
@@ -59,7 +59,7 @@ export default function ComponentPreview() {
       {/* Code */}
       <section className="flex flex-col gap-3">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          Code
+          코드
         </h2>
         <pre className="rounded-xl bg-zinc-950 text-zinc-100 text-xs px-5 py-4 overflow-x-auto leading-relaxed">
           <code>{`<button className="px-4 py-2 rounded-md bg-zinc-900 text-white">
