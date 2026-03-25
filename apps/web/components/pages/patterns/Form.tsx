@@ -1,3 +1,5 @@
+"use client";
+
 import { PageShell, Section, PreviewBox } from "@/components/PageShell";
 
 export function PatternForm() {
