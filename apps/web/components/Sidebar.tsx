@@ -10,7 +10,9 @@ export default function Sidebar() {
   return (
     <aside className="w-56 shrink-0 border-r border-zinc-200 overflow-y-auto flex flex-col">
       <div className="px-5 py-5 border-b border-zinc-200">
-        <span className="text-sm font-semibold tracking-tight">Vernacular</span>
+        <Link href="/" className="text-sm font-semibold tracking-tight hover:opacity-70 transition-opacity">
+          Vernacular
+        </Link>
       </div>
       <nav className="flex-1 px-3 py-4 flex flex-col gap-6">
         {nav.map(({ label, category, items }) => (
