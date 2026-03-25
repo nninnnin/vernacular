@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+
 
 type Status = "완료" | "진행중" | "검토필요" | "미시작";
 type Category = "기초" | "컴포넌트" | "패턴";
@@ -132,15 +132,7 @@ export default function Home() {
   const progress = Math.round((completedCount / items.length) * 100);
 
   return (
-    <div className="min-h-screen bg-zinc-50 font-sans">
-      {/* Header */}
-      <header className="bg-white border-b border-zinc-200 px-6 py-4 flex items-center justify-between">
-        <span className="text-sm font-semibold tracking-tight">Vernacular</span>
-        <Link href="/foundation/colors" className="px-3 py-1.5 text-xs font-medium rounded-md border border-zinc-200 text-zinc-600 hover:bg-zinc-50 transition-colors">
-          문서 보기 →
-        </Link>
-      </header>
-
+    <div className="min-h-full bg-zinc-50 font-sans">
       <main className="max-w-2xl mx-auto px-4 py-10 flex flex-col gap-6">
         {/* Summary card */}
         <div className="bg-white rounded-xl border border-zinc-200 p-5 flex flex-col gap-3">
