@@ -1,47 +1,48 @@
-import { FoundationColors } from "@/components/pages/foundation/Colors";
-import { FoundationTypography } from "@/components/pages/foundation/Typography";
-import { FoundationSpacing } from "@/components/pages/foundation/Spacing";
-import { FoundationShadows } from "@/components/pages/foundation/Shadows";
-import { FoundationRadius } from "@/components/pages/foundation/Radius";
-import { ComponentButton } from "@/components/pages/components/Button";
-import { ComponentInput } from "@/components/pages/components/Input";
-import { ComponentBadge } from "@/components/pages/components/Badge";
-import { ComponentCard } from "@/components/pages/components/Card";
-import { ComponentSelect } from "@/components/pages/components/Select";
-import { ComponentCheckbox } from "@/components/pages/components/Checkbox";
-import { ComponentToggle } from "@/components/pages/components/Toggle";
-import { PatternForm } from "@/components/pages/patterns/Form";
-import { PatternNavigation } from "@/components/pages/patterns/Navigation";
-import { PatternModal } from "@/components/pages/patterns/Modal";
-import { PatternToast } from "@/components/pages/patterns/Toast";
+"use client";
 
-const sections = [
-  { label: "색상", Component: FoundationColors },
-  { label: "타이포그래피", Component: FoundationTypography },
-  { label: "간격", Component: FoundationSpacing },
-  { label: "그림자", Component: FoundationShadows },
-  { label: "둥근 모서리", Component: FoundationRadius },
-  { label: "Button", Component: ComponentButton },
-  { label: "Input", Component: ComponentInput },
-  { label: "Badge", Component: ComponentBadge },
-  { label: "Card", Component: ComponentCard },
-  { label: "Select", Component: ComponentSelect },
-  { label: "Checkbox", Component: ComponentCheckbox },
-  { label: "Toggle", Component: ComponentToggle },
-  { label: "Form", Component: PatternForm },
-  { label: "Navigation", Component: PatternNavigation },
-  { label: "Modal", Component: PatternModal },
-  { label: "Toast", Component: PatternToast },
-];
+import { ModalDemo } from "@/components/pages/patterns/Modal";
+import { ToastDemo } from "@/components/pages/patterns/Toast";
+
+function FormDemo() {
+  return (
+    <form className="flex flex-col gap-4 w-72" onSubmit={(e) => e.preventDefault()}>
+      <div className="flex flex-col gap-1.5">
+        <label className="text-xs font-medium text-zinc-700">이름</label>
+        <input className="px-3 py-2 text-sm border border-zinc-200 rounded-md outline-none focus:ring-2 focus:ring-zinc-900 transition-all" placeholder="홍길동" />
+      </div>
+      <div className="flex flex-col gap-1.5">
+        <label className="text-xs font-medium text-zinc-700">이메일</label>
+        <input type="email" className="px-3 py-2 text-sm border border-zinc-200 rounded-md outline-none focus:ring-2 focus:ring-zinc-900 transition-all" placeholder="hello@example.com" />
+      </div>
+      <button type="submit" className="px-4 py-2 text-sm font-medium rounded-md bg-zinc-900 text-white hover:bg-zinc-700 transition-colors">제출</button>
+    </form>
+  );
+}
+
+function NavigationDemo() {
+  return (
+    <nav className="flex items-center gap-1 bg-white border border-zinc-200 rounded-lg p-1 w-full max-w-sm">
+      {["홈", "탐색", "라이브러리", "설정"].map((item, i) => (
+        <button
+          key={item}
+          className={`flex-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${i === 0 ? "bg-zinc-900 text-white" : "text-zinc-500 hover:text-zinc-900"}`}
+        >
+          {item}
+        </button>
+      ))}
+    </nav>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="divide-y divide-zinc-100">
-      {sections.map(({ label, Component }) => (
-        <div key={label}>
-          <Component />
-        </div>
-      ))}
+    <div className="min-h-full flex items-center justify-center bg-zinc-50 p-12">
+      <div className="bg-white rounded-2xl border border-zinc-200 p-10 flex flex-col gap-12 w-full max-w-lg">
+        <NavigationDemo />
+        <FormDemo />
+        <ModalDemo />
+        <ToastDemo />
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { PageShell, Section, PreviewBox } from "@/components/PageShell";
 
-function ModalDemo() {
+export function ModalDemo() {
   const [open, setOpen] = useState(false);
   return (
     <>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { PageShell, Section, PreviewBox } from "@/components/PageShell";
 
-function ToastDemo() {
+export function ToastDemo() {
   const [toasts, setToasts] = useState<{ id: number; message: string; type: string }[]>([]);
   let id = 0;
 
