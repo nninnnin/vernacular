@@ -5,7 +5,7 @@ import { ToastDemo } from "@/components/pages/patterns/Toast";
 
 function FormDemo() {
   return (
-    <form className="flex flex-col gap-4 w-72 border border-zinc-200 rounded-xl p-6" onSubmit={(e) => e.preventDefault()}>
+    <form className="flex flex-col gap-4 w-72 border border-zinc-200 rounded-xl p-6 bg-white" onSubmit={(e) => e.preventDefault()}>
       <div className="flex flex-col gap-1.5">
         <label className="text-xs font-medium text-zinc-700">이름</label>
         <input className="px-3 py-2 text-sm border border-zinc-200 rounded-md outline-none focus:ring-2 focus:ring-zinc-900 transition-all" placeholder="홍길동" />
