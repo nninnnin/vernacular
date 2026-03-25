@@ -11,7 +11,7 @@ export function SegmentedControlDemo({ items }: { items: string[] }) {
         <button
           key={item}
           onClick={() => setSelected(item)}
-          className={`flex-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+          className={`flex-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
             selected === item ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500 hover:text-zinc-900"
           }`}
         >
