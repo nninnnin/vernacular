@@ -37,11 +37,11 @@ function NavigationDemo() {
 export default function Home() {
   return (
     <div className="min-h-full flex items-center justify-center bg-zinc-50 p-12">
-      <div className="bg-white rounded-2xl border border-zinc-200 divide-y divide-zinc-100 w-full max-w-lg overflow-hidden">
-        <div className="p-8"><NavigationDemo /></div>
-        <div className="p-8"><FormDemo /></div>
-        <div className="p-8"><ModalDemo /></div>
-        <div className="p-8"><ToastDemo /></div>
+      <div className="flex flex-col gap-12 w-full max-w-lg">
+        <NavigationDemo />
+        <FormDemo />
+        <ModalDemo />
+        <ToastDemo />
       </div>
     </div>
   );
