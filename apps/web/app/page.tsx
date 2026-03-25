@@ -37,11 +37,18 @@ function NavigationDemo() {
 export default function Home() {
   return (
     <div className="min-h-full flex items-center justify-center bg-zinc-50 p-12">
-      <div className="bg-white rounded-2xl border border-zinc-200 p-10 flex flex-col gap-12 w-full max-w-lg">
-        <NavigationDemo />
-        <FormDemo />
-        <ModalDemo />
-        <ToastDemo />
+      <div className="flex flex-col gap-4 w-full max-w-lg">
+        {[
+          { label: "Navigation", Demo: NavigationDemo },
+          { label: "Form", Demo: FormDemo },
+          { label: "Modal", Demo: ModalDemo },
+          { label: "Toast", Demo: ToastDemo },
+        ].map(({ label, Demo }) => (
+          <div key={label} className="bg-white rounded-2xl border border-zinc-200 p-8 flex flex-col gap-4">
+            <span className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400">{label}</span>
+            <Demo />
+          </div>
+        ))}
       </div>
     </div>
   );
