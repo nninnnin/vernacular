@@ -12,7 +12,7 @@ export default function Sidebar() {
     <aside className="w-56 shrink-0 border-r border-zinc-200 overflow-y-auto flex flex-col">
       <div className="px-5 py-5 border-b border-zinc-200">
         <Link href="/" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity w-fit">
-          <VernacularIcon size={24} />
+          <VernacularIcon size={32} />
           <span className="text-sm font-semibold tracking-tight">Vernacular</span>
         </Link>
       </div>
