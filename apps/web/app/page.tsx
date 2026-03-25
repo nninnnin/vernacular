@@ -5,7 +5,7 @@ import { ToastDemo } from "@/components/pages/patterns/Toast";
 
 function FormDemo() {
   return (
-    <form className="flex flex-col gap-4 w-72" onSubmit={(e) => e.preventDefault()}>
+    <form className="flex flex-col gap-4 w-72 border border-zinc-200 rounded-xl p-6" onSubmit={(e) => e.preventDefault()}>
       <div className="flex flex-col gap-1.5">
         <label className="text-xs font-medium text-zinc-700">이름</label>
         <input className="px-3 py-2 text-sm border border-zinc-200 rounded-md outline-none focus:ring-2 focus:ring-zinc-900 transition-all" placeholder="홍길동" />
@@ -37,18 +37,11 @@ function NavigationDemo() {
 export default function Home() {
   return (
     <div className="min-h-full flex items-center justify-center bg-zinc-50 p-12">
-      <div className="flex flex-col gap-4 w-full max-w-lg">
-        {[
-          { label: "Navigation", Demo: NavigationDemo },
-          { label: "Form", Demo: FormDemo },
-          { label: "Modal", Demo: ModalDemo },
-          { label: "Toast", Demo: ToastDemo },
-        ].map(({ label, Demo }) => (
-          <div key={label} className="bg-white rounded-2xl border border-zinc-200 p-8 flex flex-col gap-4">
-            <span className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400">{label}</span>
-            <Demo />
-          </div>
-        ))}
+      <div className="bg-white rounded-2xl border border-zinc-200 divide-y divide-zinc-100 w-full max-w-lg overflow-hidden">
+        <div className="p-8"><NavigationDemo /></div>
+        <div className="p-8"><FormDemo /></div>
+        <div className="p-8"><ModalDemo /></div>
+        <div className="p-8"><ToastDemo /></div>
       </div>
     </div>
   );
