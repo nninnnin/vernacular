@@ -39,7 +39,7 @@ export const nav: NavGroup[] = [
     category: "patterns",
     items: [
       { label: "Form", slug: "form" },
-      { label: "Navigation", slug: "navigation" },
+      { label: "Segmented Control", slug: "segmented-control" },
       { label: "Modal", slug: "modal" },
       { label: "Toast", slug: "toast" },
     ],

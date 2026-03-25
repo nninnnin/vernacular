@@ -13,7 +13,7 @@ import { ComponentSelect } from "@/components/pages/components/Select";
 import { ComponentCheckbox } from "@/components/pages/components/Checkbox";
 import { ComponentToggle } from "@/components/pages/components/Toggle";
 import { PatternForm } from "@/components/pages/patterns/Form";
-import { PatternNavigation } from "@/components/pages/patterns/Navigation";
+import { PatternSegmentedControl } from "@/components/pages/patterns/SegmentedControl";
 import { PatternModal } from "@/components/pages/patterns/Modal";
 import { PatternToast } from "@/components/pages/patterns/Toast";
 
@@ -36,7 +36,7 @@ const pages: Record<string, Record<string, React.ComponentType>> = {
   },
   patterns: {
     form: PatternForm,
-    navigation: PatternNavigation,
+    "segmented-control": PatternSegmentedControl,
     modal: PatternModal,
     toast: PatternToast,
   },
