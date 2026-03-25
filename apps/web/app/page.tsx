@@ -13,7 +13,7 @@ const colors = [
 
 function ColorChips() {
   return (
-    <div className="inline-flex gap-3 bg-white border border-zinc-200 rounded-xl p-6">
+    <div className="inline-flex self-start gap-3 bg-white border border-zinc-200 rounded-xl p-6">
       {colors.map(({ name, value }) => (
         <div key={name} className="flex flex-col items-center gap-2">
           <div className="w-12 h-12 rounded-xl border border-black/5" style={{ backgroundColor: value }} />
