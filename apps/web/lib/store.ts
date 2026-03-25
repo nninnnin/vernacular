@@ -36,6 +36,7 @@ export const useTokenStore = create<TokenStore>()(
     }),
     {
       name: "vernacular-tokens",
+      skipHydration: true,
     }
   )
 );
