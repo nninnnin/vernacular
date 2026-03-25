@@ -3,6 +3,27 @@
 import { ModalDemo } from "@/components/pages/patterns/Modal";
 import { ToastDemo } from "@/components/pages/patterns/Toast";
 
+const colors = [
+  { name: "Primary", value: "#0066FF" },
+  { name: "Neutral", value: "#71717A" },
+  { name: "Success", value: "#22C55E" },
+  { name: "Warning", value: "#F59E0B" },
+  { name: "Error", value: "#EF4444" },
+];
+
+function ColorChips() {
+  return (
+    <div className="flex gap-3">
+      {colors.map(({ name, value }) => (
+        <div key={name} className="flex flex-col items-center gap-2">
+          <div className="w-12 h-12 rounded-xl shadow-sm border border-black/5" style={{ backgroundColor: value }} />
+          <span className="text-[10px] text-zinc-400">{name}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function FormDemo() {
   return (
     <form className="flex flex-col gap-4 w-72 border border-zinc-200 rounded-xl p-6 bg-white" onSubmit={(e) => e.preventDefault()}>
@@ -38,6 +59,7 @@ export default function Home() {
   return (
     <div className="min-h-full flex items-center justify-center bg-zinc-50 p-12">
       <div className="flex flex-col gap-12 w-full max-w-lg">
+        <ColorChips />
         <NavigationDemo />
         <FormDemo />
         <ModalDemo />
