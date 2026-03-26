@@ -8,7 +8,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-56 shrink-0 border-r border-zinc-200 overflow-y-auto flex flex-col">
+    <aside className="w-56 shrink-0 bg-white rounded-2xl border border-zinc-200 shadow-lg overflow-y-auto flex flex-col">
       <nav className="flex-1 px-3 py-4 flex flex-col gap-6">
         {nav.map(({ label, category, items }) => (
           <div key={category}>

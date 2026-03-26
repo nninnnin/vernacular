@@ -12,6 +12,7 @@ import { ComponentCard } from "@/components/pages/components/Card";
 import { ComponentSelect } from "@/components/pages/components/Select";
 import { ComponentCheckbox } from "@/components/pages/components/Checkbox";
 import { ComponentToggle } from "@/components/pages/components/Toggle";
+import { ComponentDropdownMenu } from "@/components/pages/components/DropdownMenu";
 import { PatternForm } from "@/components/pages/patterns/Form";
 import { PatternSegmentedControl } from "@/components/pages/patterns/SegmentedControl";
 import { PatternModal } from "@/components/pages/patterns/Modal";
@@ -33,6 +34,7 @@ const pages: Record<string, Record<string, React.ComponentType>> = {
     select: ComponentSelect,
     checkbox: ComponentCheckbox,
     toggle: ComponentToggle,
+    "dropdown-menu": ComponentDropdownMenu,
   },
   patterns: {
     form: PatternForm,

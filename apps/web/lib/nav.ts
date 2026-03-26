@@ -32,6 +32,7 @@ export const nav: NavGroup[] = [
       { label: "Select", slug: "select" },
       { label: "Checkbox", slug: "checkbox" },
       { label: "Toggle", slug: "toggle" },
+      { label: "Dropdown Menu", slug: "dropdown-menu" },
     ],
   },
   {
