@@ -1,5 +1,6 @@
 import Link from "next/link";
 import UserAvatar from "./UserAvatar";
+import LogoText from "./LogoText";
 import { Button } from "@vernacular/ui";
 
 export default function TopNav() {
@@ -9,9 +10,7 @@ export default function TopNav() {
         href="/"
         className="flex items-center gap-2.5 hover:opacity-70 transition-opacity w-fit"
       >
-        <span className="text-base font-semibold tracking-tight font-mono">
-          Vernacular
-        </span>
+        <LogoText />
       </Link>
 
       <div className="flex items-center gap-3">
