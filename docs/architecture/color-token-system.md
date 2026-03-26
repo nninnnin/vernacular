@@ -1,3 +1,8 @@
+---
+title: 색상 토큰 시스템
+title_en: Color Token System
+---
+
 # Color Token System
 
 ## 개요

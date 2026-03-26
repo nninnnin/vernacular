@@ -1,3 +1,8 @@
+---
+title: 아키텍처
+title_en: Architecture
+---
+
 # Architecture
 
 ## Core Concepts

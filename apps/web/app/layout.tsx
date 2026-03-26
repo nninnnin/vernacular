@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import TopNav from "@/components/TopNav";
 import Sidebar from "@/components/Sidebar";
-import { ControlPanel } from "@vernacular/control-panel";
+import ConditionalControlPanel from "@/components/ConditionalControlPanel";
+import { getAllDocs } from "@/lib/docs";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,9 +37,9 @@ export default function RootLayout({
           <TopNav />
 
           <div className="flex flex-1 gap-3 p-3 overflow-hidden">
-            <Sidebar />
+            <Sidebar docs={getAllDocs()} />
             <main className="flex-1 overflow-y-auto bg-white rounded-2xl border border-zinc-200 shadow-lg">{children}</main>
-            <ControlPanel />
+            <ConditionalControlPanel />
           </div>
         </Providers>
       </body>

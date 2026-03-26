@@ -1,3 +1,8 @@
+---
+title: 인식 인코딩
+title_en: Perception Encoding
+---
+
 # Perception Encoding
 
 사용자의 추상적인 시각 선택을 DS 토큰으로 번역하는 매핑 시스템.

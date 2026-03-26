@@ -1,3 +1,8 @@
+---
+title: 리서치
+title_en: Research
+---
+
 - DTCG(Design Tokens W3C Community Group)
 
 - Figma Variables

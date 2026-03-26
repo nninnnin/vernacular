@@ -1,5 +1,6 @@
 import Link from "next/link";
 import UserAvatar from "./UserAvatar";
+import { Button } from "@vernacular/ui";
 
 export default function TopNav() {
   return (
@@ -13,7 +14,12 @@ export default function TopNav() {
         </span>
       </Link>
 
-      <UserAvatar />
+      <div className="flex items-center gap-3">
+        <Button asAnchor variant="ghost" size="sm">
+          <Link href="/documentation" className="font-mono">Docs</Link>
+        </Button>
+        <UserAvatar />
+      </div>
     </header>
   );
 }

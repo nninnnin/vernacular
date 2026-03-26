@@ -1,3 +1,8 @@
+---
+title: 버튼 다형성
+title_en: Button Polymorphism
+---
+
 # Button Polymorphism
 
 ## 문제

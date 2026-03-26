@@ -1,3 +1,8 @@
+---
+title: 설계 원칙
+title_en: Design Principles
+---
+
 # 설계 원칙
 
 ## 1. 디자인 시스템이 의미와 스타일을 함께 소유한다
