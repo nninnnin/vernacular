@@ -45,4 +45,16 @@ export const nav: NavGroup[] = [
       { label: "Toast", slug: "toast" },
     ],
   },
+  {
+    label: "예제",
+    category: "examples",
+    items: [
+      { label: "Todo App", slug: "todo" },
+      { label: "Multi-field Form", slug: "multi-form" },
+      { label: "Login", slug: "login" },
+      { label: "Notification", slug: "notification" },
+      { label: "Profile", slug: "profile" },
+      { label: "Dashboard", slug: "dashboard" },
+    ],
+  },
 ];

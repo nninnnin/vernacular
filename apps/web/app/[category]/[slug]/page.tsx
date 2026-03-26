@@ -14,6 +14,12 @@ import { ComponentCheckbox } from "@/components/pages/components/Checkbox";
 import { ComponentToggle } from "@/components/pages/components/Toggle";
 import { ComponentDropdownMenu } from "@/components/pages/components/DropdownMenu";
 import { PatternForm } from "@/components/pages/patterns/Form";
+import { ExampleTodo } from "@/components/pages/examples/Todo";
+import { ExampleMultiForm } from "@/components/pages/examples/MultiForm";
+import { ExampleLogin } from "@/components/pages/examples/Login";
+import { ExampleNotification } from "@/components/pages/examples/Notification";
+import { ExampleProfile } from "@/components/pages/examples/Profile";
+import { ExampleDashboard } from "@/components/pages/examples/Dashboard";
 import { PatternSegmentedControl } from "@/components/pages/patterns/SegmentedControl";
 import { PatternModal } from "@/components/pages/patterns/Modal";
 import { PatternToast } from "@/components/pages/patterns/Toast";
@@ -35,6 +41,14 @@ const pages: Record<string, Record<string, React.ComponentType>> = {
     checkbox: ComponentCheckbox,
     toggle: ComponentToggle,
     "dropdown-menu": ComponentDropdownMenu,
+  },
+  examples: {
+    todo: ExampleTodo,
+    "multi-form": ExampleMultiForm,
+    login: ExampleLogin,
+    notification: ExampleNotification,
+    profile: ExampleProfile,
+    dashboard: ExampleDashboard,
   },
   patterns: {
     form: PatternForm,
