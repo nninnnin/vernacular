@@ -3,19 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { nav } from "@/lib/nav";
-import { VernacularIcon } from "@/components/ui/Icon";
 
 export default function Sidebar() {
   const pathname = usePathname();
 
   return (
     <aside className="w-56 shrink-0 border-r border-zinc-200 overflow-y-auto flex flex-col">
-      <div className="px-5 py-5 border-b border-zinc-200">
-        <Link href="/" className="flex items-center gap-2.5 hover:opacity-70 transition-opacity w-fit">
-          <VernacularIcon size={32} />
-          <span className="text-base font-semibold tracking-tight">Vernacular</span>
-        </Link>
-      </div>
       <nav className="flex-1 px-3 py-4 flex flex-col gap-6">
         {nav.map(({ label, category, items }) => (
           <div key={category}>
