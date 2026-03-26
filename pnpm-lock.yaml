@@ -20,6 +20,12 @@ importers:
       '@neondatabase/serverless':
         specifier: ^1.0.2
         version: 1.0.2
+      '@vernacular/control-panel':
+        specifier: workspace:*
+        version: link:../../packages/control-panel
+      '@vernacular/tokens-core':
+        specifier: workspace:*
+        version: link:../../packages/tokens-core
       drizzle-orm:
         specifier: ^0.45.1
         version: 0.45.1(@neondatabase/serverless@1.0.2)(@types/pg@8.20.0)
@@ -67,13 +73,24 @@ importers:
         specifier: ^5
         version: 5.9.3
 
-  packages/control-panel: {}
+  packages/control-panel:
+    dependencies:
+      '@vernacular/tokens-core':
+        specifier: workspace:*
+        version: link:../tokens-core
+      react:
+        specifier: '>=19'
+        version: 19.2.4
 
   packages/ds-preview: {}
 
   packages/funnel: {}
 
-  packages/tokens-core: {}
+  packages/tokens-core:
+    dependencies:
+      zustand:
+        specifier: '>=5'
+        version: 5.0.12(@types/react@19.2.14)(react@19.2.4)
 
 packages:
 

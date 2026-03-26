@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../../../packages/control-panel/src";
+@source "../../../packages/tokens-core/src";
 
 :root {
   --background: #ffffff;

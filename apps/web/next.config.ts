@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["@vernacular/tokens-core", "@vernacular/control-panel"],
 };
 
 export default nextConfig;

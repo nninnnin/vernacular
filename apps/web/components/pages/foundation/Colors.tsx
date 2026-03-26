@@ -1,5 +1,5 @@
 import { PageShell, Section } from "@/components/PageShell";
-import { defaultTokens } from "@/lib/tokens";
+import { defaultTokens } from "@vernacular/tokens-core";
 
 const { palette, semantic } = defaultTokens.color;
 

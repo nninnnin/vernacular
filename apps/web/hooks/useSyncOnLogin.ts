@@ -2,7 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import { useEffect, useRef } from "react";
-import { useTokenStore } from "@/lib/store";
+import { useTokenStore } from "@vernacular/tokens-core";
 
 export function useSyncOnLogin() {
   const { data: session, status } = useSession();
