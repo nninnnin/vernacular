@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { adjectives, nouns } from "@/lib/wordlist";
+import { Avatar } from "@vernacular/ui";
 
 type AnonUser = {
   name: string;
@@ -44,7 +45,7 @@ export default function UserAvatar() {
     setUser(getOrCreateUser());
   }, []);
 
-  if (!user) return <div className="w-7 h-7 rounded-full bg-zinc-100" />;
+  if (!user) return <div className="w-5 h-5 rounded-full bg-zinc-100" />;
 
   const initials = user.name
     .split("-")
@@ -52,13 +53,11 @@ export default function UserAvatar() {
     .join("");
 
   return (
-    <div>
-      <div
-        className="w-5 h-5 rounded-full bg-zinc-900 flex items-center justify-center text-[9px] font-bold text-white cursor-default select-none"
-        title={`Key: ${user.key}`}
-      >
-        {initials}
-      </div>
-    </div>
+    <Avatar
+      initials={initials}
+      size="sm"
+      className="w-5 h-5 text-[9px] cursor-default"
+      title={`Key: ${user.key}`}
+    />
   );
 }

@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@vernacular/tokens-core": ["../../packages/tokens-core/src/index.ts"],
+      "@vernacular/control-panel": ["../../packages/control-panel/src/index.tsx"],
+      "@vernacular/ui": ["../../packages/ui/src/index.ts"]
     }
   },
   "include": [

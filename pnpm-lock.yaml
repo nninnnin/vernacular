@@ -26,6 +26,9 @@ importers:
       '@vernacular/tokens-core':
         specifier: workspace:*
         version: link:../../packages/tokens-core
+      '@vernacular/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       drizzle-orm:
         specifier: ^0.45.1
         version: 0.45.1(@neondatabase/serverless@1.0.2)(@types/pg@8.20.0)
@@ -91,6 +94,12 @@ importers:
       zustand:
         specifier: '>=5'
         version: 5.0.12(@types/react@19.2.14)(react@19.2.4)
+
+  packages/ui:
+    dependencies:
+      react:
+        specifier: '>=19'
+        version: 19.2.4
 
 packages:
 
